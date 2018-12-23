@@ -1,0 +1,7 @@
+
+## Author: Lynxium
+## Title: GroupLootContainer Fix
+
+## Interface: 80100
+
+GroupLootContainerFix.lua
