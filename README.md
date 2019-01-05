@@ -1,7 +1,10 @@
 # GroupLootContainerFix
 
-Apparently the `GroupLootContainer` frame isn't being removed properly
-and it blocks the `WorldFrame` from receiving the mouse events so this addon is an attempt to fix that.
+Fixes the following issues that relate to the `GroupLootContainer`:
+
+1. By default `GroupLootContainer` is set to receive mouse events and thus when it's shown, it blocks the `WorldFrame` from receiving mouse events.
+2. Seems like frames added to `GroupLootContainer.rollFrames` aren't being removed for some reason and this affects positioning of the roll frames such as `BonusRollFrame`.
+3. Due to #2 the size of the `GroupLootContainer` grows indefinitely.
 
 **Things I don't know**
 
@@ -18,6 +21,6 @@ and it blocks the `WorldFrame` from receiving the mouse events so this addon is 
 
 **Notes**
 
-I haven't tested it at all yet so keep this in mind; it's only an attempt at fixing the problem and shouldn't be considered the solution.
+This is only a workaround and shouldn't be considered the final solution; Blizzard should look into the issues above and fix it.
 
 ### **Enjoy!**
